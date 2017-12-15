@@ -18,10 +18,10 @@
       {% if display_toc and toc(page.content).length > 1 %}
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            {{ __('sidebar.toc') }}
+            {{ theme.myDefine.nav }}
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            {{ __('sidebar.overview') }}
+            {{ theme.myDefine.overview }}
           </li>
         </ul>
       {% endif %}

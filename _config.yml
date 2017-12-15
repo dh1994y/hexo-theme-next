@@ -88,7 +88,7 @@ menu:
   全部: /archives/ || archive
   分类: /categories/ || th
   标签: /tags/ || tags
-  about: /about/ || user
+  关于: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -150,10 +150,10 @@ links_layout: block
 
 # Table Of Contents in the Sidebar
 toc:
-  enable: false
+  enable: true
 
   # Automatically add list number to toc.
-  number: false
+  number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
@@ -209,13 +209,13 @@ excerpt_description: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: true
-  length: 500
+  length: 300
 
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -223,7 +223,7 @@ post_meta:
 post_wordcount:
   item_text: true
   wordcount: true
-  min2read: true
+  min2read: false
   totalcount: true
   separated_meta: true
 
@@ -334,7 +334,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -712,7 +712,7 @@ canvas_ribbon:
 # 自定义配置
 
 # 网易云音乐
-music: true
+music: false
 
 # link
 openLink:
@@ -722,6 +722,17 @@ myDefine:
   tagName: 标签
   categorieName: 分类
   postName: 全部
+  searchName: 搜索
+  openPageCount: #全部文章统计数量显示 true开启
+  openCategoriesCount: #全部目录统计数量显示 true开启
+  openTagsCount: #全部标签统计数量显示 true开启
+  page_postName: 提交于 #文章提交于文字
+  page_updateName: 更新于 #文章更新于文字
+  articleWordCount: 本文字数 #文章本文字数
+  overview: 总览 #总览文字描述
+  nav: 导航 #导航文字描述
+  readMore: 阅读详情 #阅读详情
+
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
