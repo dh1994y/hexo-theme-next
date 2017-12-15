@@ -732,6 +732,8 @@ myDefine:
   overview: 总览 #总览文字描述
   nav: 导航 #导航文字描述
   readMore: 阅读详情 #阅读详情
+  pageCategory: 目录 #
+  pageTag: 标签 #
 
 
 # Script Vendors.
