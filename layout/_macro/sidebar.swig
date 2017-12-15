@@ -54,7 +54,7 @@
                 <a href="{{ url_for(config.archive_dir) }}">
               {% endif %}
                   <span class="site-state-item-count">{{ site.posts.length }}</span>
-                  <span class="site-state-item-name">{{ __('state.posts') }}</span>
+                  <span class="site-state-item-name">{{ theme.myDefine.postName }}</span>
                 </a>
               </div>
             {% endif %}
@@ -65,7 +65,7 @@
               <div class="site-state-item site-state-categories">
                 {% if hasCategoriesPage %}<a href="{{ url_for(categoriesPageQuery[0].path) }}">{% endif %}
                   <span class="site-state-item-count">{{ site.categories.length }}</span>
-                  <span class="site-state-item-name">{{ __('state.categories') }}</span>
+                  <span class="site-state-item-name">{{ theme.myDefine.categorieName }}</span>
                 {% if hasCategoriesPage %}</a>{% endif %}
               </div>
             {% endif %}
@@ -76,7 +76,7 @@
               <div class="site-state-item site-state-tags">
                 {% if hasTagsPage %}<a href="{{ url_for(tagsPageQuery[0].path) }}">{% endif %}
                   <span class="site-state-item-count">{{ site.tags.length }}</span>
-                  <span class="site-state-item-name">{{ __('state.tags') }}</span>
+                  <span class="site-state-item-name">{{ theme.myDefine.tagName }}</span>
                 {% if hasTagsPage %}</a>{% endif %}
               </div>
             {% endif %}

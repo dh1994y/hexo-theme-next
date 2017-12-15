@@ -84,10 +84,10 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
-  #archives: /archives/ || archive
-  #categories: /categories/ || th
-  #tags: /tags/ || tags
+  主页: / || home
+  全部: /archives/ || archive
+  分类: /categories/ || th
+  标签: /tags/ || tags
   about: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -150,10 +150,10 @@ links_layout: block
 
 # Table Of Contents in the Sidebar
 toc:
-  enable: true
+  enable: false
 
   # Automatically add list number to toc.
-  number: true
+  number: false
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
@@ -646,7 +646,7 @@ tabs:
 
 # Use velocity to animate everything.
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # Transition variants:
@@ -716,6 +716,12 @@ music: true
 
 # link
 openLink:
+
+# 自定义
+myDefine:
+  tagName: 标签
+  categorieName: 分类
+  postName: 全部
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
