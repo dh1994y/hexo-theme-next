@@ -80,9 +80,12 @@
                 {% if hasTagsPage %}</a>{% endif %}
               </div>
             {% endif %}
-
+			{% if theme.music %}
+			  <div style="magin:5px;padding:5px;">
+			    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=496870798&auto=1&height=32"></iframe>
+		      </div>
+			{% endif %}
           </nav>
-
           {% if theme.rss %}
             <div class="feed-link motion-element">
               <a href="{{ url_for(theme.rss) }}" rel="alternate">
@@ -91,7 +94,7 @@
               </a>
             </div>
           {% endif %}
-
+		  {% if theme.openLink %}
           <div class="links-of-author motion-element">
             {% if theme.social %}
               {% for name, link in theme.social %}
@@ -108,6 +111,7 @@
               {% endfor %}
             {% endif %}
           </div>
+		  {% endif %}
 
           {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
           {% if theme.creative_commons in cc %}
